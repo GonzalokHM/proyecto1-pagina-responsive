@@ -1,0 +1,16 @@
+
+.accesorios_card{
+
+box-shadow: 5px 5px 10px 1px #000000;
+
+}
+
+.logo{
+
+    filter: drop-shadow(21px 5px 10px #000);
+}
+
+#body{
+background-color: darkslategray;
+
+}
