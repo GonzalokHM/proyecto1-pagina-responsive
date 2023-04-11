@@ -41,7 +41,7 @@
        <label class="rc-hamburger-label" for="hamburger">&#9776;</label>
        <input type="checkbox" class="rc-hamburger" id="hamburger" />
 
-       <nav role="navigation" class="rc-section-nav">
+       <nav role="navigation" class="rc-section-nav rc-layout-flex">
          <ul class="rc-layout-flex rc-section-header-nav">
            <li>
              <a
@@ -49,7 +49,7 @@
                role="link"
                aria-label="#"
                class="rc-section-header--nav-link"
-               >last tecnology</a>
+               >last Technology</a>
             </li>
            <li>
              <a
@@ -73,7 +73,7 @@
               role="link"
               aria-label="#"
               class="rc-section-header--nav-link"
-              >Formulario</a
+              >Form</a
             >
           </li>
         </ul>
@@ -85,26 +85,37 @@
 
          
             
-        
-        <img src="https://img.remediosdigitales.com/133e87/650_1000_kawasaki-h2r/450_1000.jpg" alt="portadaMovil" class="portadaMovil">
-        <img src="https://www.soymotero.net/sites/default/files/2014-09/kawasaki_ninja_h2r_2015_02.jpg" alt="portadaTablet" class="portadaTablet">
-        <img src="https://img.remediosdigitales.com/202df5/hi_21zxt00y_201gy3arfb2cg_a/1366_2000.jpeg" alt="portadaDesktop" class="portadaDesktop">
+       <div class="cover rc-layout-flex rc-layout-container">
+        <img src="https://img.remediosdigitales.com/133e87/650_1000_kawasaki-h2r/450_1000.jpg" alt="coverMovil" class="coverMovil">
+        <img src="https://www.soymotero.net/sites/default/files/2014-09/kawasaki_ninja_h2r_2015_02.jpg" alt="coverTablet" class="coverTablet">
+        <img src="https://img.remediosdigitales.com/202df5/hi_21zxt00y_201gy3arfb2cg_a/1366_2000.jpeg" alt="coverDesktop" class="coverDesktop"> 
+       </div> 
 
   </header>
 
   <main>
-    <article class="rc-section-section-name">
-      <section class="rc-layout-container">
-        <div class="rc-layout-flex">
+    <article class="rc-lastTechnology">
+      <section class="lastTechnology rc-layout-container">
+        <div class="rc-layout-flex ">
           
-          <h2>last tecnology</h2>
+          <h2>last Technology</h2>
 
         </div>
-        <img src="https://www.soymotero.net/sites/default/files/styles/max_width_800px/public/2021-10/nueva_kawasaki_ninja_h2r_tres_cuartos_desnuda.jpg" alt="detalles tecnicos">
+        <div class=" scrollTech">
+          <div class="scroll1">
+            <img src="https://www.soymotero.net/sites/default/files/styles/max_width_800px/public/2021-10/nueva_kawasaki_ninja_h2r_tres_cuartos_desnuda.jpg" alt="detalles tecnicos1">
+          </div>
+          <div class="scroll2">
+            <img src="https://editorial.pxcrush.net/bikesales/general/editorial/237765_starkf_varg_workshop__static_main.jpg?width=1024&height=683" alt="detalles tecnicos2">
+          </div>
+          <div class="scroll3">
+            <img src="https://motorcycleshippers.com/wp-content/uploads/2020/01/Damon-Copilot.jpg" alt="detalles tecnicos3">
+          </div>
+        </div>
 
       </section>
     </article>
-    <article class="rc-section-section-name">
+    <article class="rc-accesories">
       <div class="rc-layout-flex">
         
         <h2> accessories </h2>
@@ -114,27 +125,23 @@
       <section class="rc-layout-container">
         
 
-        <div class="rc-layout-grid">
-         
-
-
-         
+        <div class="rc-layout-grid ">
+        
 
         
-        
-          <div class="cards-accesorios">
-            <div class="cardCascos">
+          <div class="rc-layout-grid rc-layout-grid-3 CardsShop">
+            <div class="cardGuantes rc-layout-flex">
+              <h3>Guantes</h3>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxhLDyCpnlBbs0FU5rXkLA7ajzxyi2IYAS9w&usqp=CAU" alt="guantes" class="iGuantes">
+            </div>
+            <div class="cardRopa rc-layout-flex">
+              <h3>Ropa</h3>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzSwgqMndfvuT2fEAI-tHS6m80bbIAY8wILA&usqp=CAU" alt="ropa" class="iRopa">
+            </div>
+            <div class="cardCascos rc-layout-flex">
               <h3>Cascos</h3>
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTilfTiyMyXeRjrNrUrCL5yoejmbZ4FHNlGIg&usqp=CAU" alt="cascos" class="iCascos">
               
-            </div>
-            <div class="cardGuantes">
-              <h3>Guantes</h3>
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxhLDyCpnlBbs0FU5rXkLA7ajzxyi2IYAS9w&usqp=CAU" alt="guantes" class="iGuantes">
-           </div>
-            <div class="cardRopa">
-              <h3>Ropa</h3>
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzSwgqMndfvuT2fEAI-tHS6m80bbIAY8wILA&usqp=CAU" alt="ropa" class="iRopa">
             </div>
           </div>
          
@@ -144,14 +151,14 @@
         </div>
       </section>
     </article>
-    <article class="rc-section-section-name">
+    <article class="rc-promotions">
       <div class="rc-layout-flex">
         
         <h2>Promotions👌</h2>
         
       </div>
       <section class="rc-layout-container">
-          <ul class="cards">
+          <ul class="cards ">
             <li>
               <a href="" class="card">
                 <img src="https://img.remediosdigitales.com/ebcefa/ducati-panigale-superleggera-v4-2020-062/840_560.jpg" class="card__image" alt="bike" />
@@ -226,9 +233,9 @@
 
       <form name="bikerForm"action="/🚧serverUnderConstruction🚧.php" method="post" novalidate enctype="multipart/form-data">
         <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname" /><br  /><br />
+        <input type="text" id="fname" name="fname" placeholder="your name" minlength="2" maxlength="9" required><br  /><br />
         <label for="email">email:</label>
-        <input type="text" id="email" name="email" /><br  /><br />
+        <input type="text" id="email" name="email" placeholder="your e-mail" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address"><br  /><br />
         <input type="submit" value="submit">
         <input type="checkbox" id="bikerCheckbox">
         <label for="bikerCheckbox"><h3>🏍️Biker🏍️</h3></label>
