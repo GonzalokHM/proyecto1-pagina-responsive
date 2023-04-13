@@ -38,6 +38,7 @@
 
   /* TYPOGRAPHY TYPE */
   --rc-typography-typeface: "Roboto", sans-serif;
+  --rc-typography-h4: 'Montserrat', sans-serif;
 
   /* FONT SIZE */
   --rc-typography-h1: 1.9375rem;
@@ -128,8 +129,14 @@ h2 {
   border: 4mm ridge var(--rc-color-n-600);
   
 }
+h4{
+  font-family: var(--rc-typography-h4);
+}
 
-
+.politics, .politics a, p{
+  color: var(--rc-color-n-100);
+  text-decoration-color:var(--rc-color-n-050)
+}
 
 p,
 ul { margin-bottom: var(--rc-typography-margin-body); }
@@ -209,6 +216,25 @@ svg {
   max-width: 100%;
   height: auto;
 }
+.cover {
+  position: relative;
+}
+
+.cover h4 {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.051);
+  padding: 1rem;
+  border-radius: 50%;
+}
+.cover, .lastTechnology, .rc-accesories, .rc-promotions {
+  animation-name: zoomBanner;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
 
 .rc-layout-container {
   padding-left: var(--rc-layout-container);
@@ -225,17 +251,15 @@ svg {
 
 .rc-layout-grid { display: grid; }
 
-
-
-
-
-
 /* HEADER */
+
+
 .rc-section-header-layout {
   justify-content: space-around;
   text-transform: uppercase;
   min-height: 10vh;
   padding: var(--rc-section-padding);
+ 
 }
 
 .rc-section-header-nav {
@@ -401,10 +425,15 @@ display: grid;
 
 .bikerform{
 
-  filter: drop-shadow(21px 5px 10px var(--rc-color-background-secondary));
-  color: var(--rc-color-n-100)
- 
-
+  filter: drop-shadow(10px 5px 10px var(--rc-color-background-secondary));
+  color: var(--rc-color-n-100);
+  margin: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border-radius: 30%;
+  box-sizing: border-box;
+  background-color: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 50%, rgba(255,255,255,0) 100%);;
 }
 .bikerform input[type="checkbox"]{
 display: inline-block;
@@ -481,8 +510,22 @@ margin-right: 10px;
     position: relative;
   }
 
-  
+  .politics{
+    display: none;
+  }
 
+  .bikerform{
+    direction: rtl;
+  }
+  .bikerform label{
+    display: none;
+  }
+  .cover h4{
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    top: 0%;
+  }
  
   
   .coverDesktop,
@@ -518,6 +561,10 @@ margin-right: 10px;
 .card__header{
   padding: 0;
   
+}
+
+.card__thumb{
+  margin-left: 5px;
 }
 } 
 
@@ -618,8 +665,7 @@ margin-right: 10px;
     
   }
 
-  /*TYPOGRAPHY*/
-  .rc-text-intro { font-size: var(--rc-typography-h4); }
+
 
   /*LAYOUT*/
   .rc-layout-container { width: 100%; }
@@ -678,15 +724,11 @@ margin-right: 10px;
     filter: blur(14px) brightness(0%) saturate(0%);
     opacity: 0;
   }
-
+  
   100% {
     transform: scale(1);
     opacity: 1;
   }
 }
 
-.cover, .lastTechnology, .rc-accesories, .rc-promotions {
-  animation-name: zoomBanner;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-}
+
