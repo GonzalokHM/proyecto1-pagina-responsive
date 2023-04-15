@@ -588,7 +588,7 @@ margin-right: 10px;
     grid-row-gap: 15px;
     }
     
-    .cardgloves { grid-area: 1 / 1 / 2 / 2; }
+    .cardGloves { grid-area: 1 / 1 / 2 / 2; }
     .cardClothes { grid-area: 2 / 2 / 3 / 3; }
     .cardHelmets { grid-area: 3 / 3 / 4 / 4; }
 
@@ -681,7 +681,7 @@ margin-right: 10px;
       grid-row-gap: 0px;
       }
       
-      .cardgloves{ grid-area: 1 / 2 / 3 / 4; }
+      .cardGloves{ grid-area: 1 / 2 / 3 / 4; }
       .cardClothes { grid-area: 4 / 4 / 6 / 6; }
       .cardHelmets { grid-area: 1 / 6 / 3 / 8; }
   
