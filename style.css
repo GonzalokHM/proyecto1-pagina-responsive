@@ -588,9 +588,9 @@ margin-right: 10px;
     grid-row-gap: 15px;
     }
     
-    .cardGuantes { grid-area: 1 / 1 / 2 / 2; }
-    .cardRopa { grid-area: 2 / 2 / 3 / 3; }
-    .cardCascos { grid-area: 3 / 3 / 4 / 4; }
+    .cardgloves { grid-area: 1 / 1 / 2 / 2; }
+    .cardClothes { grid-area: 2 / 2 / 3 / 3; }
+    .cardHelmets { grid-area: 3 / 3 / 4 / 4; }
 
     .rc-accesories{
       margin: 8%;
@@ -681,9 +681,9 @@ margin-right: 10px;
       grid-row-gap: 0px;
       }
       
-      .cardGuantes{ grid-area: 1 / 2 / 3 / 4; }
-      .cardRopa { grid-area: 4 / 4 / 6 / 6; }
-      .cardCascos { grid-area: 1 / 6 / 3 / 8; }
+      .cardgloves{ grid-area: 1 / 2 / 3 / 4; }
+      .cardClothes { grid-area: 4 / 4 / 6 / 6; }
+      .cardHelmets { grid-area: 1 / 6 / 3 / 8; }
   
       .rc-layout-flex{
         margin-top: 5%;
