@@ -1,4 +1,7 @@
-
+@font-face {
+  font-family: 'Lobster';
+  src: url('fonts/Lobster-Regular.ttf') format('truetype');
+}
 :root {
    /*cards*/
    --surface-color: #fff;
@@ -26,9 +29,14 @@
   --rc-color-background-primary  : var(--rc-color-n-000);
   --rc-color-background-secondary: var(--rc-color-n-050);
   --rc-color-background-tertiary : var(--rc-color-n-902);
+  --cd-background-color-n-002: rgba(255, 255, 255, 0.14);
+
+  /* SHADOW */
+  --cd-box-shadow-color-n-003: rgba(0, 0, 0, 0.1);
 
   /* BORDER COLOR */
   --rc-color-border: var(--rc-color-n-100);
+  --cd-border-color-n-004: rgba(255, 255, 255, 0.12);
 
   /* TYPOGRAPHY COLOR */
   --rc-color-typography-heading: var(--rc-color-n-500);
@@ -38,7 +46,7 @@
 
   /* TYPOGRAPHY TYPE */
   --rc-typography-typeface: "Roboto", sans-serif;
-  --rc-typography-h4: 'Montserrat', sans-serif;
+  --rc-typography-h3: 'Montserrat', sans-serif;
 
   /* FONT SIZE */
   --rc-typography-h1: 1.9375rem;
@@ -225,9 +233,14 @@ svg {
   top: 8%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.051);
   padding: 1rem;
   border-radius: 50%;
+  font-family: 'Lobster', cursive;
+  background: var(--cd-background-color-n-002);
+  border-radius: 30px; 
+  box-shadow: 0 4px 30px var(--cd-box-shadow-color-n-003);
+  backdrop-filter: blur(5px);
+  border: 1px solid var(--cd-border-color-n-004);
 }
 .cover, .lastTechnology, .rc-accesories, .rc-promotions {
   animation-name: zoomBanner;
